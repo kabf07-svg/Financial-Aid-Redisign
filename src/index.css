@@ -1,0 +1,65 @@
+/* 1. IMPORT OFFICIAL ACADEMIC FONTS */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700;800&family=Inter:wght@400;700;900&display=swap');
+
+/* 2. UNIVERSAL RESET & DOCUMENT STRUCTURE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%; /* Provides the baseline */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-family: "EB Garamond", serif;
+  -webkit-font-smoothing: antialiased;
+  color: #333333;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Forces the React root to fill all available space */
+  width: 100%;
+}
+
+/* 3. TYPOGRAPHY & BRANDING */
+h1, h2, h3, h4 {
+  color: #004684;
+  font-weight: 900;
+}
+
+.nav-link-text {
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+/* 4. INSTITUTIONAL COMPONENTS */
+.active-indicator-bar {
+  position: absolute;
+  left: -2px;
+  width: 8px;
+  height: 40px;
+  background-color: #FDB927;
+  border-radius: 9999px;
+}
+
+/* 5. CUSTOM AGGIE SCROLLBAR */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #f8fafc; }
+::-webkit-scrollbar-thumb {
+  background: #004684;
+  border-radius: 10px;
+  border: 2px solid #f8fafc;
+}
